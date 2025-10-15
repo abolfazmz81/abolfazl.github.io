@@ -98,6 +98,46 @@ body {
     border-top: 2px solid #ecf0f1;
 }
 
+.research-interests-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.research-interests-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    
+}
+
+.interest-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.interest-tag:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
 .contact-info a {
     color: #3498db;
     text-decoration: none;
@@ -335,6 +375,7 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .tag:hover {
