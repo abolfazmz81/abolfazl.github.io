@@ -92,6 +92,18 @@ body {
     text-align: justify;
 }
 
+.collaboration-highlight {
+    background-color: #e8f4f8;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin-top: 1.5rem;
+}
+
+.collaboration-highlight strong {
+    color: #2c3e50;
+}
+
 .contact-info {
     margin-top: 2rem;
     padding-top: 1rem;
