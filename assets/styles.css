@@ -660,4 +660,106 @@ footer {
     .research-interests {
         grid-template-columns: 1fr;
     }
+    
+    /* Transcript responsive fixes */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-value {
+        word-break: break-word;
+        font-size: 1rem;
+    }
+    
+    .student-info-card {
+        padding: 1.5rem;
+    }
+    
+    .transcript-table {
+        font-size: 0.85rem;
+    }
+    
+    .transcript-table th,
+    .transcript-table td {
+        padding: 0.5rem;
+    }
+    
+    .semester-section h3 {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media (max-width: 515px) {
+    .transcript-table thead {
+        display: none;
+    }
+    
+    .transcript-table,
+    .transcript-table tbody,
+    .transcript-table tr,
+    .transcript-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .transcript-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ecf0f1;
+        border-radius: 8px;
+        padding: 0.75rem;
+        background-color: white;
+    }
+    
+    .transcript-table td {
+        text-align: left;
+        padding: 0.5rem 0;
+        border: none;
+        position: relative;
+        padding-left: 45%;
+    }
+    
+    .transcript-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 40%;
+        padding-right: 10px;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    
+    .transcript-table td:first-child {
+        padding-left: 0;
+        font-weight: 600;
+        color: #3498db;
+        margin-bottom: 0.5rem;
+    }
+    
+    .transcript-table td:first-child:before {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .info-label,
+    .info-value {
+        font-size: 0.9rem;
+    }
+    
+    .gpa-highlight {
+        font-size: 1.1rem !important;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .transcript-section,
+    .cv-section,
+    .projects-section,
+    .gallery-section,
+    .intro-section {
+        padding: 2rem 1rem;
+    }
 }

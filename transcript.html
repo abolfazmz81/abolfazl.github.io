@@ -586,5 +586,23 @@
     </footer>
 
     <script src="assets/nav-loader.js"></script>
+    <script>
+        // Add data-label attributes to all table cells for responsive design
+        document.addEventListener('DOMContentLoaded', function() {
+            const tables = document.querySelectorAll('.transcript-table');
+            tables.forEach(table => {
+                const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
+                const rows = table.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index > 0 && headers[index]) {
+                            cell.setAttribute('data-label', headers[index]);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
