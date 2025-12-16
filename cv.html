@@ -36,17 +36,22 @@
             </div>
 
             <div class="cv-content">
+                <h2>Research Summary</h2>
+                <div class="cv-item">
+                    <p>My research focuses on applying deep learning and multimodal AI models to healthcare applications, particularly in medical image processing and signal analysis for cardiovascular diagnosis. I am interested in developing intelligent systems that combine computer vision, natural language processing, and machine learning to solve real-world problems in clinical settings.</p>
+                </div>
+
                 <h2>Education</h2>
                 <div class="cv-item">
                     <div class="cv-item-header">
-                        <h3>Bachelor of Science in Computer Science</h3>
+                        <h3>Bachelor of Science in Computer Engineering</h3>
                         <span class="cv-date">2021 – 2025</span>
                     </div>
-                    <p class="cv-institution">Babol Noshirvani University of Technology, Babol, Mazandaran</p>
+                    <p class="cv-institution">Babol Noshirvani University of Technology (Ranked 501-600 via Times Higher Education), Babol, Mazandaran</p>
                     <p><strong>GPA:</strong> 3.82/4 (over last two years)</p>
                     <ul>
                         <li>Finished a four-year bachelor program in three and a half years</li>
-                        <li>Achieved 140 credits at Babol Noshirvani University of Technology (Ranked 501-600 via Times Higher Education)</li>
+                        <li>Achieved 140 credits</li>
                     </ul>
                 </div>
 
@@ -76,7 +81,163 @@
                 <div class="cv-item">
                     <h3>The Role of Machine Learning in Diagnosis of Acute Occlusion Myocardial Infarction in Presence of Left Bundle Branch Block (LBBB)</h3>
                     <p class="cv-authors">A. Mohammadi, A. Ariaei</p>
-                    <p>This research introduces a deep learning-based approach to segment ECG images, extracts ECG signals from each segmented image to identify the presence of myocardial infarction.</p>
+                    <ul>
+                        <li>Conducted under supervision of Dr. Hesam Omranpour</li>
+                        <li>Uses deep learning and signal processing to segment ECG images and extract ECG signals</li>
+                        <li>Data consists of annotated ECG images and corresponding patient records</li>
+                        <li>Expected outcome: an interpretable model to detect myocardial infarction in ECGs with LBBB cases, improving diagnosis accuracy</li>
+                    </ul>
+                </div>
+
+                <h2>Academic Projects</h2>
+                
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Deep Learning-Based ECG Image Segmentation</h3>
+                        <span class="cv-date">On-going</span>
+                    </div>
+                    <ul>
+                        <li>Developed an ECG image segmentation application using nnUNet architecture trained on doctor-segmented RGB datasets (83 images)</li>
+                        <li>Data converted into Compressed NIfTI format (.nii.gz) for nnUNet compatibility</li>
+                        <li>Achieved 90% segmentation accuracy on one validation dataset</li>
+                        <li>Technologies: Python, PyTorch, nnUNet, OpenCV, NumPy</li>
+                        <li>Purpose: automate ECG image segmentation for efficient signal extraction for diagnostic AI systems</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Computational Intelligence Algorithms: Design, Implementation and Evaluation</h3>
+                        <span class="cv-date">2025</span>
+                    </div>
+                    <ul>
+                        <li>Implemented various computational intelligence algorithms, including Genetic Algorithms, LVQ, and reinforcement learning (from scratch)</li>
+                        <li>Also implemented MLP, K-Means, KNN, and SOM using Python libraries</li>
+                        <li>Used multiple datasets for performance comparison and visualization</li>
+                        <li>Technologies: Python, scikit-learn, NumPy, matplotlib</li>
+                        <li>Outcome: comparative analysis report showing convergence rates and classification accuracy</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Design and Implementation of Teslang Compiler</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p>A Lexical, Syntax, and Semantic Analyzer for a Custom Programming Language</p>
+                    <ul>
+                        <li>Built a multi-layer compiler (Teslang) with modular architecture</li>
+                        <li>Implemented lexical, syntax, and semantic analysis with robust error recovery</li>
+                        <li>Technologies: Python, PLY, custom grammar definitions</li>
+                        <li>Purpose: to analyze and compile domain-specific code efficiently</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>A CNN Image Classifier for CIFAR-10 Dataset</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <ul>
+                        <li>Developed a PyTorch-based CNN model for image classification on CIFAR-10 (60,000 images)</li>
+                        <li>Applied k-fold cross-validation for improved generalization</li>
+                        <li>Purpose: test CNN architectures for small-scale natural image datasets</li>
+                        <li>Outcome: achieved 85% accuracy on test set</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Smart University Chatbot Implementation</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p>Telegram-Based QA with LLM Integration and Prompt Engineering</p>
+                    <ul>
+                        <li>Developed a domain-specific chatbot to assist NIT students in querying academic regulations</li>
+                        <li>Supervised by Dr. Mehdi Emadi</li>
+                        <li>Utilized ChatGPT API, LangChain, Elasticsearch, Python, Telegram API</li>
+                        <li>Purpose: natural language querying of university guidelines and manuals</li>
+                        <li>Outcome: interactive chatbot capable of retrieving relevant text passages from academic PDFs</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Design and Execution of a Fault-Tolerant File Encryption Service</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p>Using Sockets and Python</p>
+                    <ul>
+                        <li>Created a client-server encryption framework using Python sockets, multiprocessing, and MD5 hashing</li>
+                        <li>Server dynamically spawns worker processes for concurrent encryption</li>
+                        <li>Commander process monitors fault tolerance and replaces failed workers</li>
+                        <li>Purpose: ensure reliable encrypted data transmission in distributed systems</li>
+                    </ul>
+                </div>
+
+                <h2>Teaching Assistant</h2>
+                
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Compiler Design</h3>
+                        <span class="cv-date">2025</span>
+                    </div>
+                    <p><strong>Instructor:</strong> Dr. Ali Gholami Rudi | Project Design and Phase Planning</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Software Systems Analysis & Design</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p><strong>Instructor:</strong> DR. Mehdi Emadi | Project Mentorship and Phase Design & Planning</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Operating Systems</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p><strong>Instructor:</strong> Dr. Ali Gholami Rudi | Final Project Design</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Compiler Design</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p><strong>Instructor:</strong> Dr. Ali Gholami Rudi | Project Design and Phase Planning</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Databases</h3>
+                        <span class="cv-date">2024</span>
+                    </div>
+                    <p><strong>Instructor:</strong> DR. Mehdi Emadi | Project Phase Design and Computer-Based Exercises</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Data Structures</h3>
+                        <span class="cv-date">2023</span>
+                    </div>
+                    <p><strong>Instructor:</strong> Mahyar Hassanpour | Design and Evaluation of Paper-Based Exercises</p>
+                    <p>Babol Noshirvani University of Technology</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3>Theory of Formal Languages & Automata</h3>
+                        <span class="cv-date">2023</span>
+                    </div>
+                    <p><strong>Instructor:</strong> Mahyar Hassanpour | Holding Problem-Solving Sessions</p>
+                    <p>Babol Noshirvani University of Technology</p>
                 </div>
 
                 <h2>Awards and Honors</h2>
@@ -107,13 +268,6 @@
                     </ul>
                 </div>
 
-                <h2>Technical Skills</h2>
-                <div class="cv-item">
-                    <p><strong>Programming Languages & Frameworks:</strong> Python, C#, Java, VHDL, Matlab, Shell, .NET</p>
-                    <p><strong>Libraries:</strong> scikit-learn, Pandas, Numpy, OpenCV, matplotlib, LangChain, Entity Framework</p>
-                    <p><strong>Technologies:</strong> Docker, Microservices, ChatGPT API, Git, LaTeX</p>
-                </div>
-
                 <h2>Extracurricular Activities</h2>
                 <div class="cv-item">
                     <ul>
@@ -122,9 +276,49 @@
                     </ul>
                 </div>
 
+                <h2>Technical Skills</h2>
+                <div class="cv-item">
+                    <p><strong>Programming Languages & Frameworks:</strong> Python, C#, Java, VHDL, Matlab, Shell, .NET</p>
+                    <p><strong>Libraries:</strong> scikit-learn, Pandas, NumPy, OpenCV, matplotlib, PyTorch, LangChain, Entity Framework</p>
+                    <p><strong>Technologies:</strong> Docker, Microservices, ChatGPT API, Git, Unity, LaTeX</p>
+                </div>
+
                 <h2>Test Scores</h2>
                 <div class="cv-item">
-                    <p><strong>IELTS Academic Score:</strong> Preparing for exam (to be taken on October 31st)</p>
+                    <div class="ielts-score-card">
+                        <h3><i class="fas fa-certificate"></i> IELTS Academic</h3>
+                        <div class="ielts-overall">
+                            <span class="ielts-label">Overall Band Score:</span>
+                            <span class="ielts-score-main">8.0</span>
+                            <span class="ielts-cefr">(CEFR Level: C1)</span>
+                        </div>
+                        <div class="ielts-breakdown">
+                            <div class="ielts-skill">
+                                <span class="skill-name">Listening</span>
+                                <span class="skill-score">9.0</span>
+                            </div>
+                            <div class="ielts-skill">
+                                <span class="skill-name">Reading</span>
+                                <span class="skill-score">9.0</span>
+                            </div>
+                            <div class="ielts-skill">
+                                <span class="skill-name">Writing</span>
+                                <span class="skill-score">6.5</span>
+                            </div>
+                            <div class="ielts-skill">
+                                <span class="skill-name">Speaking</span>
+                                <span class="skill-score">7.5</span>
+                            </div>
+                        </div>
+                        <div class="ielts-details">
+                            <p><strong>Test Date:</strong> December 9, 2025</p>
+                            <p><strong>Test Report Form Number:</strong> 25IR503437MOHA026A</p>
+                            <p><strong>Verification:</strong> Results can be verified at <a href="https://ielts.org/verify" target="_blank">ielts.org/verify</a></p>
+                        </div>
+                        <div class="ielts-note">
+                            <i class="fas fa-info-circle"></i> It is recommended that the candidate's language ability as indicated in this Test Report Form be re-assessed after two years from the date of the test.
+                        </div>
+                    </div>
                 </div>
 
                 <h2>Hobbies and Interests</h2>
